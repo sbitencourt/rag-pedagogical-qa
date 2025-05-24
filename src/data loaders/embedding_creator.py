@@ -1,3 +1,5 @@
+# embedding_creator.py
+
 # Libraries
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
