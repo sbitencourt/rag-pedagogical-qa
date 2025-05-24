@@ -77,3 +77,21 @@ This is a personal project built with Python, leveraging the LangChain and FAISS
      ```bash
      python main.py
      ```
+## Directory Structure
+
+```bash
+rag-pedagogical-qa/
+├── data
+│   ├── documents                      # Input documents for indexing
+│   └── faiss_index                    # Vector indexes stored locally
+├── README.md                          # Project documentation
+├── requirements.txt                   # Project dependencies
+└── src                                # Source code of the project
+    ├── data loaders                   # Data preparation and loading modules
+    │   └── embedding_creator.py       # Creates embeddings from documents
+    ├── functions                      # Helper functions for specific features
+    │   ├── __init__.py                # Functions package initializer
+    │   ├── __pycache__                # Python bytecode cache
+    │   └── retrieval.py               # Search mechanisms using LangChain
+    └── main.py                        # Main script to run the system
+```
