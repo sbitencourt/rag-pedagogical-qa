@@ -16,7 +16,7 @@ load_dotenv()
 
 # Choose the model
 llm = ChatOpenAI(
-    model="gpt-3.5-turbo",
+    model="gpt-4o",
     temperature=0.5,
     api_key=os.getenv("OPENAI_API_KEY")
 )
@@ -34,7 +34,7 @@ qa_chain = RetrievalQA.from_chain_type(
 )
 
 # Define the question in Portuguese
-portuguese_question = """Quais ferramentas ou linguagens de programação serão abordadas?"""
+portuguese_question = """Quais ferramentas serão abordadas no programa?"""
 
 # Call the send_question function
 send_question(portuguese_question, qa_chain)
