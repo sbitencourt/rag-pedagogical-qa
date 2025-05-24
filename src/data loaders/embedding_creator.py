@@ -10,7 +10,7 @@ from langchain.memory import ConversationSummaryMemory
 from langchain_core.output_parsers import StrOutputParser
 from langchain_community.document_loaders import TextLoader
 from langchain_community.vectorstores import FAISS
-#from langchain.vectorstores import FAISS
+#from langchain.vectorstores import FAISS # deprecated
 from langchain.chains import RetrievalQA
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import CharacterTextSplitter
@@ -48,4 +48,4 @@ vectorstore = FAISS.from_documents(
 )
 
 # Salvar a base de dados vetorial para futuras buscas
-vectorstore.save_local("data/faiss_index")
+vectorstore.save_local("data/faiss_index/")
