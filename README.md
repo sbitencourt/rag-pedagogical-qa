@@ -40,7 +40,7 @@ This is a personal project built with Python, leveraging the LangChain and FAISS
    
    ```bash
    git clone https://github.com/sbitencourt/rag-pedagogical-qa.git
-   cd rag-pedagogical-qa.git)
+   cd rag-pedagogical-qa
    ```
 
 2. **(Optional but recommended) Create and activate a virtual environment:**
